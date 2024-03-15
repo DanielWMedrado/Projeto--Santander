@@ -1,0 +1,232 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'SantanderHeadline';
+    src: url('../fonts/Santander-Headline-W05-Regular.ttf') format('truetype');
+}
+
+:root{
+    --cor1: #ec0000;
+    --cor2: #CC0000;
+
+    --font-padrao: font-family: 'SantanderHeadline', sans-serif ;
+}
+
+body{
+    height: 100vh;
+}
+
+*{
+    font-family: 'SantanderHeadline', Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #222222;
+    text-decoration: none;
+    padding: 4px 70px ;
+    height: 8%;
+    min-width: 180px;
+    font-size: 18px;
+}
+
+header *{
+    margin-left: 10px;
+}
+
+header   a{
+    display: flex;
+    align-items: center;
+    color: #222222;
+    text-decoration: none;
+    padding-left: 2rem;
+    cursor: pointer;
+    padding-left: 16px;
+    font-weight: 300;
+}
+
+#logo{
+    transform: scale(1.12);
+    margin: 0px 0px 0px 4px;
+    padding-bottom: 8px;
+}
+
+.paraVoce{
+    color: #CC0000
+}
+
+.paraEmpresa{
+    
+
+}
+
+header .serchbar{
+    display: flex;
+    width: 250px;
+    height: 50px;
+    align-items: center;
+    border-radius: 2px;
+}
+
+#head-searchbar.searching {
+    
+}
+
+#head-searchbar.noSearching {
+    
+}
+
+#inputserch{
+    display: flex;
+    transform: scale(1.4);
+    outline: 0px;
+    border: 0px;
+}
+
+#iconsearch{
+    position: relative;
+    right: 15%;
+    transform: scale(1.1);
+    cursor: text;
+    z-index: 10000;
+}
+
+header .desktop-view-space{
+    height: 100%;
+    position: relative;
+    right: 11px;
+    width: 0.5px;
+    box-shadow: 0.5px 1px 1px 1px rgba(7, 7, 7, 0.082);
+    border-left: 1px solid #cccccc;
+    margin-left: 2rem;
+
+}
+
+header .desktop-view{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;;
+    padding-left: 2rem;
+    width: 20%;
+    height: 56px;
+    background-color: #CC0000;
+}
+
+header .desktop-view button{
+    display: flex;
+    width: 300px;
+    height: 40px;
+}
+
+header .simpleAcsses{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header .simpleAcsses > input{
+    margin-right: 25px;
+}
+
+header .simpleAcsses #agencia{
+    height: 30px;
+    width: 40px;
+
+    text-align: center;
+}
+
+
+header .simpleAcsses #conta{
+    width: 100px;
+    height: 30px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    height: 5%;
+    width: 100%;
+    padding: 5px 4px;
+    background-color: #ec0000;
+    font-size: 18px;
+}
+
+.navbar-ul{
+    font-size: 20px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.navbar-ul li{
+    text-decoration: none;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.navbar-ul li:hover{
+    text-decoration: underline;
+}
+
+
+.carrosel{
+    width: 100%;
+    height: 464px;
+    background-color: #222222;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main #titulo{
+    display: flex;
+    position: relative;
+    right: 13%;
+    margin: 50px;
+    font-weight: 100;
+    
+}
+
+.row-card-slider{
+    display: flex;
+}
+
+.cards{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    width: 176px;
+    height: 126px;
+    background-color: white;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.219);
+    font-size: 15px;
+    margin: 18px;
+    letter-spacing: -0.02em;
+
+}
+
+.cards img{
+    transform: scale(0.8);
+}
+
+.cards:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 6px 16px -6px rgba(0,0,0,0.75);
+}
+
+.
