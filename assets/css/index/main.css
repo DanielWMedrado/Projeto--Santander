@@ -14,23 +14,25 @@
 }
 
 main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 65%;
+    margin: auto;
 }
 
-main #titulo{
-    display: flex;
-    position: relative;
-    right: 13%;
+.title-main{
     font-weight: 100;
-    margin-top: 20px;
-    
+    letter-spacing: -1px;
+    margin-top: 90px;
+    padding-left: 50px;
+}
+
+.title-main > h1{
+    font-weight: 100;
 }
 
 .row-card-slider{
     display: flex;
+    padding: 0px 8px;
+    justify-content: center;
 }
 
 .cards{
@@ -47,6 +49,7 @@ main #titulo{
     font-size: 15px;
     margin: 18px;
     letter-spacing: -0.02em;
+    border-radius: 3px;
 
 }
 

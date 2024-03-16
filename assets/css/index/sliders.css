@@ -48,7 +48,7 @@ section .slider-content{
 .nav-manual, .nav-auto{
     position: absolute;
     width: 100%;
-    margin-top: 24.5%;
+    margin-top: 24.4%;
     display: flex;
     justify-content: center;
     

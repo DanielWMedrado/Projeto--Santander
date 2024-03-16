@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'SantanderHeadline';
+    src: url('../fonts/Santander-Headline-W05-Regular.ttf') format('truetype');
+}
+
+:root{
+    --cor1: #ec0000;
+    --cor2: #CC0000;
+
+    --font-padrao: font-family: 'SantanderHeadline', 'Open-Sans' ;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: -10000;
+}
+
+*{
+    font-family: 'SantanderHeadline', Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
