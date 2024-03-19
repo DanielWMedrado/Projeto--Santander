@@ -18,46 +18,17 @@ main{
     margin: auto;
 }
 
-.title-main{
+main .cards-main
+
+main .cards-main .title-main{
     font-weight: 100;
     letter-spacing: -1px;
     margin-top: 90px;
     padding-left: 50px;
 }
 
-.title-main > h1{
+main .cards-main .title-main > h1{ 
     font-weight: 100;
 }
 
-.row-card-slider{
-    display: flex;
-    padding: 0px 8px;
-    justify-content: center;
-}
 
-.cards{
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    color: black;
-    width: 176px;
-    height: 126px;
-    background-color: white;
-    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.219);
-    font-size: 15px;
-    margin: 18px;
-    letter-spacing: -0.02em;
-    border-radius: 3px;
-
-}
-
-.cards img{
-    transform: scale(0.8);
-}
-
-.cards:hover{
-    transform: scale(1.1);
-    box-shadow: 0px 6px 16px -6px rgba(0,0,0,0.75);
-}

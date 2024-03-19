@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,21 +9,23 @@
     <link rel="stylesheet" href="assets/css/index/header.css">
     <link rel="stylesheet" href="assets/css/index/main.css">
     <link rel="stylesheet" href="assets/css/index/all.css">
+    <link rel="stylesheet" href="assets/css/index/scroll-menu.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <script src="assets/js/sliders.js" defer></script> <!--  Defer é o atributo para executar essa tag após carregar toda a pagina -->
-    <script src="assets/js/header.js" defer></script>
-    <script src="assets/js/jquery-3.7.1.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <script src="assets/js/index/jquery-3.7.1.js"></script>
 
 </head>
 
 <body>
 
     <!-- Header -->
-    <header> 
-        <div id="logo"><img class="imagem-logo" src="https://www.santander.com.br/sites/WPC_CMS/imagem/22-08-16_175326_M_logo-santander.svg" alt="" width="131" height="23"></div>
+    <header>
+        <div id="logo"><img class="imagem-logo"
+                src="https://www.santander.com.br/sites/WPC_CMS/imagem/22-08-16_175326_M_logo-santander.svg" alt=""
+                width="131" height="23"></div>
 
         <div class="navigation-header">
             <a class="paraVoce" href="#">Para Você</a>
@@ -30,17 +33,18 @@
 
         <a class="paraEmpresa" href="#">Para sua empresa</a>
 
-        
+
         <div id="head-searchbar" class="serchbar">
-            <i class="bi bi-search" id="iconsearch"></i>  <input type="text" placeholder="O que você procura ?" id="inputserch" class="inputserch"> 
+            <i class="bi bi-search" id="iconsearch"></i> <input type="text" placeholder="O que você procura ?"
+                id="inputserch" class="inputserch">
         </div>
 
         <span class="desktop-view-space">
-            
+
         </span>
 
         <div class="desktop-view">
-            <button type="button" class="btndesktop-view" >Pessoa Física</button>
+            <button type="button" class="btndesktop-view">Pessoa Física</button>
         </div>
 
         <div class="simpleAcsses">
@@ -48,12 +52,12 @@
                 <input type="text" id="cpf" placeholder="Insira seu CPF">
                 <!-- <label for="cpf">Insira seu CPF</label> -->
             </span>
-           <span class="icon-simpleAcsses"><i class="bi bi-lock"></i></span>
-        </div>
-        
+            <span class="icon-simpleAcsses"><i class="bi bi-lock"></i></span>
         </div>
 
-    
+        </div>
+
+
     </header>
 
     <!-- Extenção do header -->
@@ -76,21 +80,27 @@
             <input type="radio" name="btn-radio" id="radio2">
             <input type="radio" name="btn-radio" id="radio3">
 
-            
+
 
             <div class="slide-box first">
-                <a href="#"><img class="img-desktop" src="assets/img/banner1.PNG" alt="banner1"></a>
-                <a href="#"><img class="img-mobile" src="assets/img/banner1-M.PNG" alt="banner1-m"></a>
+                <a href="#"><img class="img-desktop" src="assets/img/index/banner-carrosel/banner1.PNG"
+                        alt="banner1"></a>
+                <a href="#"><img class="img-mobile" src="assets/img/index/banner-carrosel/banner1-M.PNG"
+                        alt="banner1-m"></a>
             </div>
 
             <div class="slide-box ">
-                <a href="#"><img class="img-desktop" src="assets/img/banner2.PNG" alt="banner2"></a>
-                <a href="#"><img class="img-mobile" src="assets/img/banner2-M.PNG" alt="banner2-m"></a>
+                <a href="#"><img class="img-desktop" src="assets/img/index/banner-carrosel/banner2.PNG"
+                        alt="banner2"></a>
+                <a href="#"><img class="img-mobile" src="assets/img/index/banner-carrosel/banner2-M.PNG"
+                        alt="banner2-m"></a>
             </div>
 
             <div class="slide-box ">
-                <a href="#"><img class="img-desktop" src="assets/img/banner3.PNG" alt="banner3"></a>
-                <a href="#"><img class="img-mobile" src="assets/img/banner3-M.PNG" alt="banner3-m"></a>
+                <a href="#"><img class="img-desktop" src="assets/img/index/banner-carrosel/banner3.PNG"
+                        alt="banner3"></a>
+                <a href="#"><img class="img-mobile" src="assets/img/index/banner-carrosel/banner3-M.PNG"
+                        alt="banner3-m"></a>
             </div>
 
             <div class="nav-auto">
@@ -98,7 +108,7 @@
                 <div class="auto-btn2 auto-btn"></div>
                 <div class="auto-btn3 auto-btn"></div>
             </div>
-            
+
 
             <div class="nav-manual">
                 <label for="radio1" class="manual-btn">
@@ -119,42 +129,119 @@
 
     <!-- Main -->
     <main>
-        <div class="title-main">
-            <h1 id="titulo">Dá uma olhadinha em tudo que temos</h1>
-        </div>
 
-        <div class="row-card-slider">
+        <section class="cards-main">
+            <div class="title-main">
+                <h1 id="titulo">Dá uma olhadinha em tudo que temos</h1>
+            </div>
+            <div class="content-cards-main">
+                <div class="scroll-container">
+                    <div class="scroll-wrapper">
+                        <div class="cards carousel-item">
+                            <img src="assets/img/index/icons-scroll-menu/icons8-restituição-2-64.png" alt="">
+                            <div class="title-cards-sm">
+                                <p>Abra sua conta</p>
+                            </div>
+                        </div>
+                        <div class="cards carousel-item">
+                            <img src="assets/img/index/icons-scroll-menu/icons8-loan-68 (1).png" alt="">
+                            <div class="title-cards-sm">
+                                <p>Empréstimo para você</p>
+                            </div>
+                        </div>
+                        <div class="cards carousel-item">
+                            <img src="assets/img/index/icons-scroll-menu/icons8-cartão-64.png" alt="">
+                            <div class="title-cards-sm">
+                                <p>Peço seu cartão</p>
+                            </div>
+                        </div>
+                        <div class="cards carousel-item">
+                            <img src="assets/img/index/icons-scroll-menu/icons8-câmbio-do-euro-64.png" alt="">
+                            <div class="title-cards-sm">
+                                <p>Select Global</p>
+                            </div>
+                        </div>
+                        <div class="cards carousel-item">
+                            <img src="assets/img/index/icons-scroll-menu/icons8-fatura-64.png" alt="">
+                            <div class="title-cards-sm">
+                                <p>Parcelamento de fatura</p>
+                            </div>
+                        </div>
+                        <div class="cards carousel-item">
+                            <img src="assets/img/index/icons-scroll-menu/icons8-payment-method-64.png" alt="">
+                            <div class="title-cards-sm">
+                                <p>Renegocie sua dívida</p>
+                            </div>
+                        </div>
+                        <div class="cards carousel-item">
+                            <img src="assets/img/index/icons-scroll-menu/icons8-payment-method-64.png" alt="">
+                            <div class="title-cards-sm">
+                                <p>Renegocie sua dívida</p>
+                            </div>
+                        </div>
+                        <div class="cards carousel-item">
+                            <img src="assets/img/index/icons-scroll-menu/icons8-restituição-2-64.png" alt="">
+                            <div class="title-cards-sm">
+                                <p>Abra sua conta</p>
+                            </div>
+                        </div>
+                        <div class="cards carousel-item">
+                            <img src="assets/img/index/icons-scroll-menu/icons8-loan-68 (1).png" alt="">
+                            <div class="title-cards-sm">
+                                <p>Empréstimo para você</p>
+                            </div>
+                        </div>
+                        <div class="cards carousel-item">
+                            <img src="assets/img/index/icons-scroll-menu/icons8-cartão-64.png" alt="">
+                            <div class="title-cards-sm">
+                                <p>Peço seu cartão</p>
+                            </div>
+                        </div>
+                        <div class="cards carousel-item">
+                            <img src="assets/img/index/icons-scroll-menu/icons8-câmbio-do-euro-64.png" alt="">
+                            <div class="title-cards-sm">
+                                <p>Select Global</p>
+                            </div>
+                        </div>
+                        <div class="cards carousel-item">
+                            <img src="assets/img/index/icons-scroll-menu/icons8-fatura-64.png" alt="">
+                            <div class="title-cards-sm">
+                                <p>Parcelamento de fatura</p>
+                            </div>
+                        </div>
+                        <div class="cards carousel-item">
+                            <img src="assets/img/index/icons-scroll-menu/icons8-payment-method-64.png" alt="">
+                            <div class="title-cards-sm">
+                                <p>Renegocie sua dívida</p>
+                            </div>
+                        </div>
+                        <div class="cards carousel-item">
+                            <img src="assets/img/index/icons-scroll-menu/icons8-payment-method-64.png" alt="">
+                            <div class="title-cards-sm">
+                                <p>Renegocie sua dívida</p>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="cards">
-                <img src="assets/img/icons8-restituição-2-64.png" alt="">
-                <p>Abra sua conta</p>
-            </div>  
+                    <button class="prev" onclick="scrollLeft1()">&#10094;</button>
+                    <button class="next" onclick="scrollRight()">&#10095;</button>
+                </div>
+            </div>
+        </section>
 
-            <div class="cards">
-                <img src="assets/img/icons8-restituição-2-64.png" alt="">
-                <p>Abra sua conta</p>
+        <section class="cards-main">
+            <div class="title-main">
+                <h1>Importante pra você</h1>
             </div>
 
-            <div class="cards">
-                <img src="assets/img/icons8-restituição-2-64.png" alt="">
-                <p>Abra sua conta</p>
-            </div>
+            <div></div>
+        </section>
 
-            <div class="cards">
-                <img src="assets/img/icons8-restituição-2-64.png" alt="">
-                <p>Abra sua conta</p>
-            </div>
-
-            <div class="cards">
-                <img src="assets/img/icons8-restituição-2-64.png" alt="">
-                <p>Abra sua conta</p>
-            </div>
-
-            <div class="cards">
-                <img src="assets/img/icons8-restituição-2-64.png" alt="">
-                <p>Abra sua conta</p>
-            </div> 
     </main>
-    
+    <script src="assets/js/index/header.js"></script>
+    <script src="assets/js/index/sliders.js"></script>
+    <!--  Defer é o atributo para executar essa tag após carregar toda a pagina -->
+    <script src="assets/js/index/scroll-menu.js"></script>
 </body>
+
 </html>
