@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'SantanderHeadline';
+    src: url('../fonts/Santander-Headline-W05-Regular.ttf') format('truetype');
+}
+
+
+:root{
+    --cor1: #ec0000;
+    --cor2: #CC0000;
+
+    --font-padrao: font-family: 'SantanderHeadline', 'Open-Sans' ;
+}
+
+section.slider2{
+    margin: 0 auto;
+    width: 100%;
+    height: 45%;
+    padding: 0 !important;  /*!important = importante e ianlteravel*/
+    overflow: hidden; /*Barra de rolagem é invisivel*/
+    margin-bottom: 20px;
+}
+
+section .slider-content2{
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+
+.slider-content2 input{
+    display: none;
+}
+
+.slide-box2{
+    
+    height: 100%;
+    position: relative;
+    text-align: center;
+    transition: 2s ease-in-out;
+}
+
+.slide-box2 img{
+    width: 100%;
+    height: 100%;
+}
+
+.nav-manual-slider2, .nav-auto-slider2{
+    position: absolute;
+    width: 100%;
+    margin-top: 24.4%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.nav-manual-slider2 .manual-btn-slider2, .nav-auto-slider2 .auto-btn-slider2{ 
+    background-color: #999999;
+    padding: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav-manual-slider2 .manual-btn-slider2:not(:last-child), .nav-auto-slider2 div:not(:last-child){ /*pseudo classe que permite privar uma tag de receber o atributo como no exmpemplo: aqui a ultima tag não recebe este atributo*/
+    margin-right: 8px;
+}
+
+.nav-manual-slider2 .manual-btn-slider2:hover{
+    background-color: red;
+    
+}
+
+#radio1-slider2:checked ~ .nav-auto-slider2  .auto-btn1-slider2{ /*Vai checar quando o radio1 e estiver marcado e apartir de quanto ele estiver marcado vai adiconar uma propiedade ao auto-btn1*/
+    background-color: red;
+    z-index: 10000;
+
+}
+
+#radio2-slider2:checked ~ .nav-auto-slider2 .auto-btn2-slider2{
+    background-color: red;
+    z-index: 10000;
+}
+
+#radio3-slider2:checked ~ .nav-auto-slider2 .auto-btn3-slider2{
+    background-color: red;
+    z-index: 10000;
+}
+
+#radio1-slider2:checked ~ .first{
+    margin-left: 0%;
+}
+
+#radio2-slider2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3-slider2:checked ~ .first{
+    margin-left: -50%;
+}

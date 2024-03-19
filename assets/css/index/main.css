@@ -10,25 +10,142 @@
     --cor1: #ec0000;
     --cor2: #CC0000;
 
-    --font-padrao: font-family: 'SantanderHeadline', 'Open-Sans' ;
+    --font-padrao: font-family: 'SantanderHeadline', Arial, Helvetica, sans-serif ;
 }
+
 
 main{
     width: 65%;
+    height: 100vh;
     margin: auto;
+    font-family: var(--font-padrao);
 }
 
-main .cards-main
-
-main .cards-main .title-main{
-    font-weight: 100;
-    letter-spacing: -1px;
+main .main-cards{
+    width: 100%;
     margin-top: 90px;
+    padding-left: 0px;
+}
+
+.title-cards{
+    letter-spacing: -1px;
+    margin-top: 0px;
     padding-left: 50px;
 }
 
-main .cards-main .title-main > h1{ 
-    font-weight: 100;
+h1{ 
+    font-weight: lighter;
+    font-size: 32px;
 }
+
+.main-cards .content-cards{
+}
+
+.main-cards .content-cards .picture-container{
+    margin-top: 50px;
+    padding-left: 77px;
+    cursor: pointer;
+}
+
+.main-cards .content-cards .picture-container img{
+    transform: scale(1.1);
+    border-radius: 5px;
+    margin-right: 80px;
+}
+
+.menu-main{
+    width: 100%;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-main .box{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.menu-main .cards-menu-main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 60px 60px 60px 0px;
+    font-size: 22px;
+    padding: 40px;
+    width: 30%;
+    height: 200px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.menu-main .cards-menu-main:hover{
+    background-color: rgba(0, 255, 255, 0.137);
+}
+
+.menu-main .cards-menu-main p{
+
+}
+
+.menu-main .cards-menu-main img{
+   margin-left:30px;
+}
+
+.simple-main-card{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.simple-main-card .conteiner-simple-main-card{
+    width: 90%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    margin: 25px 0px;
+}
+
+.conteiner-simple-main-card .details-simple-card{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 100px 0px 40px;
+}
+
+.conteiner-simple-main-card .details-simple-card p{
+    width: 80%;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.conteiner-simple-main-card img{
+    width: 100px;
+    height: 100px;
+    margin: 25px 0px;
+}
+
+.conteiner-simple-main-card button{
+    width: 230px;
+    height: 60px;
+    border: 0px;
+    border-radius: 10px;
+    margin: 45px 0px;
+    background-color: var(--cor1);
+    color: white;
+    font-size: 15px;
+    letter-spacing: -0.2px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.conteiner-simple-main-card .details-simple-card h1{
+    margin-bottom: 20px;
+}
+
+
+
+
 
 
