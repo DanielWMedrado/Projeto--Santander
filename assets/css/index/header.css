@@ -56,36 +56,59 @@ header   a{
 
 }
 
-header .serchbar{
+header .searchbar{
     display: flex;
-    width: 250px;
+    width: 300px;
     height: 50px;
     align-items: center;
     border-radius: 2px;
     margin-left: 80px;
+    gap: 20px;
+    transition: box-shadow 0.2s;
 }
 
-#head-searchbar.searching {
+#iconsearch, #iconreturn {
     
 }
 
-#head-searchbar.noSearching {
-    
+.hidden {
+    display: none;
 }
 
-#inputserch{
+.hidden2 {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#inputsearch{
     display: flex;
-    transform: scale(1.4);
     outline: 0px;
     border: 0px;
+    width: 64%;
+    height: 50px;
+    font-size: 18px;
+  
 }
 
 #iconsearch{
     position: relative;
-    right: 15%;
+    left: 2%;
     transform: scale(1.1);
     cursor: text;
-    z-index: 10000;
+}
+
+#iconsearch2{
+    position: relative;
+    transform: scale(1.1);
+    cursor: pointer;
+    right: 5%;
+}
+
+#iconreturn{
+    position: relative;
+    left: 2%;
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 header .desktop-view-space{
