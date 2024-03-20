@@ -17,6 +17,7 @@ searchbar.addEventListener("click", ()=>{
 
 // Adicione um event listener para cliques no documento
 document.addEventListener('click', function(event) {
+
     // Verifique se o clique ocorreu fora do campo desejado
     if (!searchbar.contains(event.target)) {
         // O clique ocorreu fora do campo desejado, execute a lógica desejada aqui
@@ -24,16 +25,4 @@ document.addEventListener('click', function(event) {
         }
     })
 
-    
 
-window.addEventListener('scroll', function() {
-    let currentScrollPos = window.pageYOffset;
-
-    // Verifica se a rolagem está para baixo
-    if (prevScrollPos > currentScrollPos) {
-        document.getElementById('header').style.top = '0'; // Exibe o cabeçalho
-    } else {
-        document.getElementById('header').style.top = '-100px'; // Esconde o cabeçalho
-    }
-    prevScrollPos = currentScrollPos;
-});
